@@ -14,3 +14,8 @@ Example to Lock a GET API end-point in Mule
 	second instance will return ##399(custom status)
 	lockid is hard-coded in this example
 	however it can be based on an unique identifier in a real world implementation
+	
+	
+
+##### Reference
+	https://ede65566-docs-migration.github.io/docs-site/mule-runtime/3.8/administer/clustering/distributed-locking
