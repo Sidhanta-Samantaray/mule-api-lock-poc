@@ -1,0 +1,35 @@
+#%RAML 1.0
+title: Synchronize Lock POC Flow
+baseUri: vibes/lock/poc/
+/ping:
+  description: Ping to Test API availability
+  get: 
+    responses: 
+      200:
+        body: 
+                application/json: 
+                  example : | 
+                    {
+                      "message":"Ping Success"
+                    }
+/test:
+  description: Test Lock Feature
+  get:
+   responses: 
+    200:
+      body: 
+        application/json: 
+          example : |
+            {
+              "message":"Test Lock Endpoint Success"
+            }
+    399:
+     body: 
+        application/json: 
+         example : |
+           {
+             "message": "Locked By Another Instance"
+           }
+     
+               
+   
