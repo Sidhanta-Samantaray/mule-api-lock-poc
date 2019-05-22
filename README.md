@@ -7,7 +7,7 @@ Example to Lock a GET API end-point in Mule
 	http://localhost:8081/vibes/api/lock/poc/test
 
 ## Description
-### This is a POC(Dummy) flow to demonstrate Lock/Unlock Operation in Mule , just adding a sleep of 10sec before sending the response
+##### This is a POC(Dummy) flow to demonstrate Lock/Unlock Operation in Mule , just adding a sleep of 10sec before sending the response
 	call /vibes/api/lock/poc/test using postman
 	from two different tabs(when first call is in progress,invoke another instance) 
 	first instance will return ##200 status code 
